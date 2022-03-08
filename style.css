@@ -1,0 +1,304 @@
+
+header {
+    background-color: #F8F8F8; 
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', 'sans-serif';
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/****************Typography******************/
+  
+h1, h2, h3 {
+    font-size: 2rem;
+    font-family: 'Lora', 'serif';
+    font-weight: 400;
+    color: #143774;
+    margin: 0;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    font-family:  'Lora', 'serif';
+    color: #143774;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+
+/**************
+   Navigation
+******************/
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 900px;
+    
+}
+
+.container-nav {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-content {
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;  
+    justify-content: center;
+    padding: 0;
+}
+
+li {
+    margin: 0 1em;
+
+}
+
+li a {
+    text-decoration: none;
+    color:  #707070;
+    font-weight: 700;
+    font-size: .75em;
+    align-items: center;
+}
+
+ a:hover, a:focus {
+    color: #1792d2;
+    
+
+}
+
+.current-page {
+    color: #1792D2;
+    border-bottom: 1px solid #1792D2;
+}
+
+@media screen and (max-width:675px) {
+    .container {
+        margin: auto;
+    }
+
+    header {
+        text-align: center;
+    }
+    .ul {
+        display: block;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-nav {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        margin: .5em 0;
+    }
+}
+
+/**************Articles******************/
+
+.article-info {
+    font-size: 0.875rem;
+    font-family: 'Ubuntu light', 'serif';
+    color: #707070;
+}
+
+.article-featured {
+    margin: 2em 0;
+    border-bottom: #707070 1px solid;
+    padding-bottom: 2em;
+
+}
+
+
+.article-recent {
+    margin-bottom: 5em;  
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+.article-body {
+    color: #1792D2;
+    font-family: 'Ubuntu light', 'serif';
+    color: #707070;
+    margin: 0;
+}
+
+.article-body span {
+    font-size: 1.125rem;
+    font-family: 'Ubuntu light', 'serif';
+    color: #1792D2;
+    text-decoration: underline;
+}
+
+.article-body .bold {
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.article-read-more {
+    font-size: 0.875rem;
+    font-family: 'Ubuntu bold', 'serif';
+    color: #1792D2;
+    text-decoration: none;
+    font-weight: 700;
+    
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+
+.subtitle {
+    font-size: .75rem;
+    color: #1792D2;
+    font-family: 'Ubuntu bold', 'serif';
+    font-weight: 700;
+    margin: 0;
+}
+
+
+@media screen and (min-width:675px) {
+    .container-nav {
+        flex-direction: row;
+    }
+
+    main {
+        width: 65%;
+    }
+
+    aside {
+        width: 35%;
+        min-width: 200px;
+    }
+
+    .article-recent {
+        flex-direction: row;
+    }
+
+    .article-recent-main {
+        width: 70%;
+        float: right;
+    }
+
+    .article-recent-secondary {
+        width: 25%;
+    }
+
+    .article-featured {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-title {
+        order: -1;
+    }
+
+    .article-image {
+        order: -2;
+    }
+}
+
+
+/****************Sidebar*****************/
+
+.sidebar-widget {
+    border: #EBEBEB 20px solid;
+    padding: 1.5em;
+    margin: 2em;
+    
+}
+
+.widget-title {
+    font-size: 1.125em;
+    color: #143774;
+    font-weight: 700;
+    font-family: 'Ubuntu bold', 'serif';
+    text-transform: uppercase;
+    margin-bottom: .75em;
+}
+
+.widget-recent-post-title {
+    font-size: 1em;
+    font-family: 'Lora', 'Sans-serif';
+
+}
+
+.widget-recent-post {
+    padding-bottom: 1em;
+    border-bottom: #707070 1px solid;
+    margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+    border-bottom: none;
+}
+
+.widget-body {
+    color: #143774;
+    text-align: left;
+    font-size: .875em;
+
+}
+
+@media (min-width:675px) {
+    .widget-recent-post {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .widget-recent-post-title {
+        order: 2;
+    }
+
+    .widget-image {
+        order: 1;
+    }
+
+}
+
+/*************Footer******************/
+ footer {
+     background-color: #143774;
+     color: white;
+     width: 100%;
+     padding: .5em;
+     text-align: center;
+ }
+
+
+ /****************Body Layout*******************/
+ 
